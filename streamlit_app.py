@@ -1,6 +1,8 @@
 import streamlit as st
 st.write("Hello Welcome to Mixtral Chat.....!")
 
+pip install ipython
+
 import numpy
 from IPython.display import clear_output
 
