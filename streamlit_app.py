@@ -19,11 +19,15 @@ subprocess.run(['git', 'clone', 'https://github.com/dvmazur/mixtral-offloading.g
 # !cd mixtral-offloading && pip install -q -r requirements.txt
 
 import subprocess
-
 # Change directory and install requirements
 subprocess.run(['cd', 'mixtral-offloading', '&&', 'pip', 'install', '-q', '-r', 'requirements.txt'], shell=True)
 
-!huggingface-cli download lavawolfiee/Mixtral-8x7B-Instruct-v0.1-offloading-demo --quiet --local-dir Mixtral-8x7B-Instruct-v0.1-offloading-demo
+# !huggingface-cli download lavawolfiee/Mixtral-8x7B-Instruct-v0.1-offloading-demo --quiet --local-dir Mixtral-8x7B-Instruct-v0.1-offloading-demo
+
+import subprocess
+# Download model using huggingface-cli
+subprocess.run(['huggingface-cli', 'download', 'lavawolfiee/Mixtral-8x7B-Instruct-v0.1-offloading-demo', '--quiet', '--local-dir', 'Mixtral-8x7B-Instruct-v0.1-offloading-demo'], shell=True)
+
 
 clear_output()
 
