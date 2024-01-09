@@ -4,11 +4,11 @@ st.write("Hello Welcome to Mixtral Chat.....!")
 import numpy
 from IPython.display import clear_output
 
-# fix triton in colab
-!export LC_ALL="en_US.UTF-8"
-!export LD_LIBRARY_PATH="/usr/lib64-nvidia"
-!export LIBRARY_PATH="/usr/local/cuda/lib64/stubs"
-!ldconfig /usr/lib64-nvidia
+# # fix triton in colab
+# !export LC_ALL="en_US.UTF-8"
+# !export LD_LIBRARY_PATH="/usr/lib64-nvidia"
+# !export LIBRARY_PATH="/usr/local/cuda/lib64/stubs"
+# !ldconfig /usr/lib64-nvidia
 
 !git clone https://github.com/dvmazur/mixtral-offloading.git --quiet
 !cd mixtral-offloading && pip install -q -r requirements.txt
