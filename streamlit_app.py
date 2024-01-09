@@ -4,6 +4,8 @@ st.write("Hello Welcome to Mixtral Chat.....!")
 import numpy
 from IPython.display import clear_output
 
+
+
 # # fix triton in colab
 # !export LC_ALL="en_US.UTF-8"
 # !export LD_LIBRARY_PATH="/usr/lib64-nvidia"
@@ -29,7 +31,7 @@ import subprocess
 subprocess.run(['huggingface-cli', 'download', 'lavawolfiee/Mixtral-8x7B-Instruct-v0.1-offloading-demo', '--quiet', '--local-dir', 'Mixtral-8x7B-Instruct-v0.1-offloading-demo'], shell=True)
 
 
-clear_output()
+#clear_output()
 
 import sys
 
