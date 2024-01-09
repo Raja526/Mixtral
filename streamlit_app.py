@@ -1,12 +1,8 @@
 import streamlit as st
 st.write("Hello Welcome to Mixtral Chat.....!")
 
-pip install ipython
-
 import numpy
 from IPython.display import clear_output
-
-
 
 # # fix triton in colab
 # !export LC_ALL="en_US.UTF-8"
